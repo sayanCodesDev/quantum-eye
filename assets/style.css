@@ -1,0 +1,236 @@
+/* QUANTUM EYE — SCIENTIFIC DASHBOARD STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* Main Container */
+.stApp {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header & Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+}
+
+p, span, label, .stMarkdown {
+    color: #334155;
+    font-size: 0.95rem;
+}
+
+code {
+    font-family: 'JetBrains Mono', monospace !important;
+    background-color: #f1f5f9 !important;
+    color: #0369a1 !important;
+    padding: 0.15rem 0.35rem !important;
+    border-radius: 4px !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* Scientific Cards */
+.qe-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+    margin-bottom: 1.25rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.qe-card:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+}
+
+.qe-card-accent {
+    border-top: 4px solid #0284c7;
+}
+
+.qe-card-teal {
+    border-top: 4px solid #0d9488;
+}
+
+.qe-card-violet {
+    border-top: 4px solid #8b5cf6;
+}
+
+.qe-card-amber {
+    border-top: 4px solid #f59e0b;
+}
+
+/* Hero Banner */
+.qe-hero {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #f5f3ff 100%);
+    border-radius: 16px;
+    padding: 2.2rem 2rem;
+    border: 1px solid #e0f2fe;
+    box-shadow: 0 4px 20px -2px rgba(2, 132, 199, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.qe-hero-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.03em;
+}
+
+.qe-hero-subtitle {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #0284c7;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.6rem;
+}
+
+.qe-hero-desc {
+    font-size: 1.0rem;
+    color: #475569;
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+/* Badge / Pills */
+.qe-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-right: 0.5rem;
+}
+
+.qe-badge-cyan {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+}
+
+.qe-badge-teal {
+    background-color: #ccfbf1;
+    color: #0f766e;
+    border: 1px solid #99f6e4;
+}
+
+.qe-badge-violet {
+    background-color: #ede9fe;
+    color: #6d28d9;
+    border: 1px solid #ddd6fe;
+}
+
+.qe-badge-amber {
+    background-color: #fef3c7;
+    color: #b45309;
+    border: 1px solid #fde68a;
+}
+
+/* Metrics */
+div[data-testid="stMetric"] {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+div[data-testid="stMetricLabel"] p {
+    color: #64748b !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+    font-size: 1.7rem !important;
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+    border: 1px solid #cbd5e1 !important;
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+}
+
+.stButton > button:hover {
+    border-color: #0284c7 !important;
+    color: #0284c7 !important;
+    box-shadow: 0 2px 8px rgba(2, 132, 199, 0.15) !important;
+    transform: translateY(-1px);
+}
+
+.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25) !important;
+}
+
+.stButton > button[kind="primary"]:hover {
+    background: linear-gradient(135deg, #0369a1 0%, #075985 100%) !important;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35) !important;
+}
+
+/* Scientific Callout Box */
+.qe-callout {
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid #0284c7;
+    background-color: #f0f9ff;
+    color: #0369a1;
+}
+
+.qe-callout-warning {
+    border-left-color: #f59e0b;
+    background-color: #fffbeb;
+    color: #92400e;
+}
+
+.qe-callout-success {
+    border-left-color: #10b981;
+    background-color: #ecfdf5;
+    color: #065f46;
+}
+
+/* Sidebar Custom Styling */
+section[data-testid="stSidebar"] {
+    background-color: #0f172a;
+    border-right: 1px solid #1e293b;
+}
+
+section[data-testid="stSidebar"] h1, 
+section[data-testid="stSidebar"] h2, 
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] p, 
+section[data-testid="stSidebar"] span, 
+section[data-testid="stSidebar"] label {
+    color: #cbd5e1 !important;
+}
+
+section[data-testid="stSidebar"] .stSelectbox label {
+    color: #94a3b8 !important;
+}
+
+/* Custom Table */
+.dataframe {
+    font-size: 0.85rem !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+}
+

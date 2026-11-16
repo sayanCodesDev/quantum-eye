@@ -1,0 +1,4 @@
+"""
+QUANTUM EYE — Modules Package
+"""
+
